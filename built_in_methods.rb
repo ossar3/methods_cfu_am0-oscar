@@ -39,6 +39,14 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+animal_type = "cat"
+puts animal_type.capitalize
+#the capitalize method is making it so the method used to output the animal type variable
+#is to capitalize it in the output 
+
+name = "steven"
+puts name.reverse
+#the reverse method is making so that the value of the name variable prints backwards in the terminal output
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -47,10 +55,19 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+miles = 28 
+p miles.round(-1)
+#the value of the variable miles is 28 but the round method rounds it to the nearest number ending 
+#with 1 zero (that is why the -1 added on end) could have also rounded to the nearest with 2 zeroes but that would have been 0
 
+number_of_mice = 40
+number_of_rats = 245
+p number_of_mice.gcd(number_of_rats)
+#i am having it print the greatest common denominator between the number of mice and rats by using the method of gcd
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
