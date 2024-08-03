@@ -6,22 +6,22 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-"Hello World".downcase
+#"Hello World".downcase
 
 
-"Hello World".include?("Hello")
+#"Hello World".include?("Hello")
 
 
-"Hello World".end_with?("Hello")
+#"Hello World".end_with?("Hello")
 
 
-"Hello World".end_with?("rld")
+#"Hello World".end_with?("rld")
 
 
-12.even?
+#12.even?
 
 
-18.next
+#18.next
 
 
 
@@ -36,8 +36,8 @@
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
 # In this example, the return value is true, because "Jeff" does start with "J".
 # The puts command prints the return value of the start_with? method (true) to the console.
-first_name = "Jeff"
-puts first_name.start_with?("J")
+#first_name = "Jeff"
+#puts first_name.start_with?("J")
 
 animal_type = "cat"
 puts animal_type.capitalize
@@ -71,3 +71,11 @@ p number_of_mice.gcd(number_of_rats)
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+badminton_scores = [12, 20, 104, 20, 2]
+puts badminton_scores.clear
+#the return value of this is nothing because it is using the clear method to clear out the whole array
+
+bugs = ["ants", "beetle", "spider"]
+p bugs.index("beetle")
+#this prints the number 1 because in the index ants is number 0, beetle is 1, spider is 3
+#so this method tells us what beetle is
