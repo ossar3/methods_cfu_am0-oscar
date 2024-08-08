@@ -60,26 +60,23 @@ puts hi_custom
 
 
 # 3: Write a method named "greet_person" that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
-def greet_person
-  firstn = "everett"
-  middlen = "susan"
-  lastn = "bowler"
-  "hello my friend #{firstn} #{middlen} #{lastn}"
+def greet_person (firstn, middlen, lastn)
+ "hello my friend #{firstn} #{middlen} #{lastn}"
 end
 
   # Call the method at least twice, and store the return value in a variable:
 
-  friendgreeting = greet_person
-  person=greet_person
+  friendgreeting=greet_person("everett", "susan", "bowler");
+  person=greet_person("thomas", "wrench", "2");
 
   # Use the puts or print command to see the return value in the console:
 
-  puts friendgreeting
-  puts person
+  p friendgreeting
+  p person
 
 # What is the return value of your method?
 
-# the string "Hello my friend everett susan bowler" 
+# the string "Hello my friend everett susan bowler" and also "hello my friend thomas wrench 2"
 
 # How many arguments did you pass your method?
 
@@ -90,22 +87,21 @@ end
 #strings, all 3
 
 # 4: Write a method named "square" that takes in one integer, and returns the square of that integer.
-def square
-  number = 13
+def square(number)
   number * number
 end
 
 # Call the method at least twice, and store the return value in a variable:
-squarenum = square
-power = square 
+squareof12 = square(12)
+squareof4 = square(4)
 # Use the puts or print command to see the return value in the console:
-puts power
-puts squarenum
+puts squareof12
+puts squareof4
 
-p "the square of #{Integer.sqrt(square)} is #{square}"
+p "the square of 5 is #{square(5)}"
 # What is the return value of your method?
 
-#the square of whatever number is equal to the variable "number"
+#the square of whatever number is inside the parentheses after the new square method
 
 # How many arguments did you pass your method?
 

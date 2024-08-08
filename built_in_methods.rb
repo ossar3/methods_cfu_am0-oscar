@@ -11,18 +11,28 @@
 
 #"Hello World".include?("Hello")
 
+#what happens in the terminal when you run this is that it checks if "hello world" includes
+#"hello" and it outputs true because it does.
 
 #"Hello World".end_with?("Hello")
+
+#the end_with method is seeing if "hello world" ends with "hello"
+#what would happen in the terminal would be an output o false because "hello world"
+#does not end with "hello"
 
 
 #"Hello World".end_with?("rld")
 
+# this is the same method as the last example, and in this case it wul return true because rld are the last 3 characters of hello world.
 
 #12.even?
+
+#the even? method is asking if the integer presented is even and in this case the output would be true, because 12 is an even number.
 
 
 #18.next
 
+#the "next" method will output the number directly after the provided integer. in this case it is 19
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
